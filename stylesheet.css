@@ -1,0 +1,304 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+  background-color: black;
+}
+/* -----------------------------------------------------------------------------Sidebar--------------------------------------------------------------------------------- */
+.weather {
+  position: relative;
+  margin: 10px;
+  border-radius: 10px;
+  display: flex;
+  width: 99%;
+  min-height: 97vh;
+}
+.sidebar {
+  width: 30%;
+  background-color: #1e213a;
+  text-align: center;
+  border-radius: 10px 0px 0px 10px;
+}
+.searchbar {
+  display: flex;
+  margin: 25px 35px 0px 35px;
+  justify-content: space-between;
+}
+.searchbar .search {
+  font-size: 14px;
+  color: #e7e7eb;
+  background: #6e707a;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  height: 35px;
+  width: 140px;
+  line-height: 35px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.searchbar .mylocation {
+  color: #e7e7eb;
+  font-size: 20px;
+  height: 35px;
+  width: 35px;
+  text-align: center;
+  line-height: 35px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+.searchbar .search:hover,
+.searchbar .mylocation:hover {
+  background-color: #444242;
+}
+.weatherimage {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.weatherimage1 {
+  width: 150px;
+  height: auto;
+  margin: 100px 0px 60px 0px;
+}
+.weatherimage2 {
+  position: absolute;
+  top: 0;
+  left: -15%;
+  opacity: 0.05;
+  width: 600px;
+  height: auto;
+}
+.temp {
+  color: #e7e7eb;
+  font-size: 84px;
+  font-weight: 500;
+  font-style: medium;
+}
+.temp span:nth-child(2) {
+  font-size: 48px;
+  color: #a09fb1;
+}
+.weathertype {
+  margin: 45px 0px;
+  color: #a09fb1;
+  font-weight: 600;
+  font-size: 30px;
+}
+.date,
+.place {
+  color: #88869d;
+  font-weight: 500;
+  font-size: 18px;
+}
+.place {
+  font-weight: 600;
+  margin-top: 25px;
+}
+.place span {
+  vertical-align: middle;
+  padding-right: 5px;
+}
+/* -------------------------------------------------------------------------Container--------------------------------------------------------------------------------------- */
+.maincontainer {
+  width: 70%;
+  background: #100e1d;
+  font-family: "Raleway", sans-serif;
+  border-radius: 0px 10px 10px 0px;
+}
+.units {
+  display: flex;
+  justify-content: flex-end;
+  text-align: center;
+  margin: 25px 125px;
+  font-weight: 700;
+  font-size: 16px;
+}
+.units div {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  line-height: 37px;
+  margin-left: 15px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.active {
+  color: #110e3c;
+  background-color: #e7e7eb;
+}
+.inactive {
+  color: #e7e7eb;
+  background-color: #585676;
+}
+.days {
+  display: flex;
+  margin: 0px 125px 0px 154px;
+}
+.days > div {
+  flex: 1;
+  background-color: #1e213a;
+  margin-right: 26px;
+  text-align: center;
+}
+.days > div:last-child {
+  margin-right: 0px;
+}
+
+.image {
+  width: 62px;
+  height: 62px;
+}
+.date {
+  color: #e7e7eb;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 12px 0px;
+}
+.days div div:nth-child(2) {
+  margin-bottom: 30px;
+}
+.days div div:nth-child(3) {
+  margin-bottom: 18px;
+  font-size: 16px;
+  font-weight: 500;
+}
+.max {
+  color: #e7e7eb;
+  margin-right: 16px;
+}
+.min {
+  color: #a09fb1;
+}
+.container2 {
+  margin: 50px 125px 0px 154px;
+  color: #e7e7eb;
+  font-size: 16px;
+  font-weight: 500;
+}
+.highlights {
+  font-size: 24px;
+  font-weight: 700;
+}
+.grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: 160px 120px;
+  grid-gap: 48px 48px;
+  text-align: center;
+  margin-top: 25px;
+}
+.grid > div {
+  background-color: #1e213a;
+}
+.grid > div > div:nth-child(1) {
+  margin: 12px 0px 5px 0px;
+}
+.grid > div div:nth-child(2) {
+  font-size: 52px;
+  font-weight: 700;
+}
+.wind-direction {
+  font-size: 14px;
+  margin: 17px 0px;
+}
+.wind-direction span:first-child {
+  font-size: 14px;
+  height: 25px;
+  width: 25px;
+  line-height: 25px;
+  transform: rotateZ(0deg);
+  vertical-align: middle;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.3);
+  margin-right: 5px;
+}
+.bar {
+  width: 75%;
+  margin: 0px auto;
+  margin-top: 15px;
+}
+.bar .percent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bar1 {
+  height: 8px;
+  background-color: #e7e7eb;
+  border-radius: 8px;
+  position: relative;
+}
+.bar2 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 8px;
+  border-radius: 8px;
+  background-color: #ffec65;
+  width: 84%;
+}
+.signature {
+  text-align: center;
+  margin-top: 27px;
+  font-size: 10px;
+}
+/* -----------------------------------------sidebar--------------------------------------------- */
+.hiddenbar {
+  position: absolute;
+  border-radius: 10px 0px 0px 10px;
+  background-color: #1e213a;
+  width: 30%;
+  height: 100%;
+  z-index: 1;
+  transform: translateX(-100%);
+  transition: all 0.6s ease;
+}
+.cancel {
+  color: #e7e7eb;
+  font-size: 30px;
+  font-weight: 400;
+  width: 80%;
+  margin: 10px auto;
+  text-align: end;
+}
+.textarea {
+  display: flex;
+  width: 80%;
+  height: 48px;
+  margin: 0px auto;
+  justify-content: space-between;
+}
+input[type="text"] {
+  border: 1px #e7e7eb solid;
+  background-color: transparent;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 0px 0px 0px 40px;
+  width: 210px;
+  height: 47px;
+  background-image: url("searchicon.svg");
+  background-repeat: no-repeat;
+  background-position: 8px 12px;
+}
+input::placeholder {
+  color: #616475;
+}
+#textsearch:focus {
+  outline: none;
+}
+.searchbtn {
+  flex: 1;
+  font-size: 16px;
+  margin-left: 16px;
+  background: #3c47e9;
+  color: #e7e7eb;
+  text-align: center;
+  line-height: 48px;
+  border: none;
+}
+
+/*-----------------------------keyframes---------------------------------*/

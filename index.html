@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="stylesheet" href="stylesheet.css" />
+    <title>Weather app</title>
+  </head>
+  <body>
+    <div class="weather">
+      <div class="sidebar">
+        <div class="searchbar">
+          <div class="search">Search for places</div>
+          <div class="mylocation material-icons">my_location</div>
+        </div>
+        <div class="weatherimage">
+          <img
+            class="weatherimage1"
+            src="Shower.png"
+            alt="Shower"
+            width="202px"
+            height="234px"
+          />
+          <img
+            class="weatherimage2"
+            src="Cloud-background.png"
+            alt="Cloud-background"
+          />
+        </div>
+        <div class="temp">
+          <span class="tempnum">15</span><span class="temptype">°C</span>
+        </div>
+        <div class="weathertype">Shower</div>
+        <div class="date">
+          <span>Today</span><span style="padding: 0px 16px">•</span
+          ><span>Fri, 5 Jun</span>
+        </div>
+        <div class="place">
+          <span class="material-icons">location_on</span
+          ><span class="placename">My location</span>
+        </div>
+      </div>
+      <div class="maincontainer">
+        <div class="units">
+          <div class="btn active">°C</div>
+          <div class="btn inactive">°F</div>
+        </div>
+        <div class="days">
+          <div class="day">
+            <div class="date">Tomorrow</div>
+            <div><img class="image" src="Sleet.png" alt="Sleet" /></div>
+            <div>
+              <span class="max">16°C</span><span class="min">11°C</span>
+            </div>
+          </div>
+          <div class="day">
+            <div class="date">Sun, 7 Jun</div>
+            <div><img class="image" src="Hail.png" alt="Sleet" /></div>
+            <div>
+              <span class="max">16°C</span><span class="min">11°C</span>
+            </div>
+          </div>
+          <div class="day">
+            <div class="date">Mon, 8 Jun</div>
+            <div><img class="image" src="LightRain.png" alt="Sleet" /></div>
+            <div>
+              <span class="max">16°C</span><span class="min">11°C</span>
+            </div>
+          </div>
+          <div class="day">
+            <div class="date">Tue, 9 Jun</div>
+            <div><img class="image" src="Clear.png" alt="Sleet" /></div>
+            <div>
+              <span class="max">16°C</span><span class="min">11°C</span>
+            </div>
+          </div>
+          <div class="day">
+            <div class="date">Wed, 10 Jun</div>
+            <div><img class="image" src="LightCloud.png" alt="Sleet" /></div>
+            <div>
+              <span class="max">16°C</span><span class="min">11°C</span>
+            </div>
+          </div>
+        </div>
+        <div class="container2">
+          <div class="highlights">Today's Highlights</div>
+          <div class="grid">
+            <div class="box1">
+              <div>Wind status</div>
+              <div>
+                <span class="windmag">7</span
+                ><span style="font-size: 28px; font-weight: 500">mph</span>
+              </div>
+              <div class="wind-direction">
+                <span class="material-icons">navigation</span><span>WSW</span>
+              </div>
+            </div>
+            <div class="box2">
+              <div>Humidity</div>
+              <div>
+                <span class="humidpercent">84</span>
+                <span style="font-size: 28px; font-weight: 500">%</span>
+              </div>
+              <div class="bar">
+                <div
+                  class="percent"
+                  style="font-size: 10px; margin-bottom: 2px"
+                >
+                  <span>0</span><span>50</span><span>100</span>
+                </div>
+                <div class="bar1"><div class="bar2"></div></div>
+                <div style="font-size: 12px; text-align: end">%</div>
+              </div>
+            </div>
+            <div class="box3">
+              <div>Visibility</div>
+              <div>
+                <span class="visibility">6,4</span>
+                <span style="font-size: 28px; font-weight: 500">miles</span>
+              </div>
+            </div>
+            <div class="box4">
+              <div>Air Pressure</div>
+              <div>
+                <span class="airpressure">998</span>
+                <span style="font-size: 28px; font-weight: 500">mb</span>
+              </div>
+            </div>
+          </div>
+          <div class="signature">Created by HimanshuY007- devChallenges.io</div>
+        </div>
+      </div>
+      <div class="hiddenbar">
+        <div class="cancel">
+          <span
+            class="material-icons"
+            style="cursor: pointer; padding-left: 20px"
+            >close</span
+          >
+        </div>
+        <form>
+          <div class="textarea">
+            <input
+              type="text"
+              name="search"
+              id="textsearch"
+              placeholder="Search location"
+              autocomplete="off"
+            />
+            <input type="submit" class="searchbtn" value="Search" />
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="app.js"></script>
+    <script>
+      let autocomplete;
+      function initAutocomplete() {
+        autocomplete = new google.maps.places.Autocomplete(
+          document.getElementById("textsearch")
+        );
+      }
+    </script>
+    <script
+      async
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCta5Let9Ct-515BeucYXPi1yyDPW-SdRQ&libraries=places&callback=initAutocomplete"
+    ></script>
+  </body>
+</html>
