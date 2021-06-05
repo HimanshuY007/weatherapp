@@ -6,7 +6,7 @@
   .sidebar {
     border-radius: 10px;
     width: 96vw;
-    height: 97vh;
+    height: 97vmax;
   }
   .searchbar .search {
     width: 40vw;
