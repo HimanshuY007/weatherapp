@@ -23,7 +23,7 @@ body {
 }
 .searchbar {
   display: flex;
-  margin: 25px 35px 0px 35px;
+  margin: 25px 2.5vw 0px 3vw;
   justify-content: space-between;
 }
 .searchbar .search {
@@ -31,8 +31,7 @@ body {
   color: #e7e7eb;
   background: #6e707a;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  height: 35px;
-  width: 140px;
+  width: 10vw;
   line-height: 35px;
   cursor: pointer;
   transition: all 0.4s ease;
@@ -113,7 +112,7 @@ body {
   display: flex;
   justify-content: flex-end;
   text-align: center;
-  margin: 25px 125px;
+  margin: 25px 8vw;
   font-weight: 700;
   font-size: 16px;
 }
@@ -136,7 +135,8 @@ body {
 }
 .days {
   display: flex;
-  margin: 0px 125px 0px 154px;
+  /* margin: 0px 125px 0px 154px; */
+  margin: 0vw 8vw 0vw 9.5vw;
 }
 .days > div {
   flex: 1;
@@ -174,7 +174,7 @@ body {
   color: #a09fb1;
 }
 .container2 {
-  margin: 50px 125px 0px 154px;
+  margin: 50px 8vw 0px 9.5vw;
   color: #e7e7eb;
   font-size: 16px;
   font-weight: 500;
@@ -221,7 +221,7 @@ body {
   margin: 0px auto;
   margin-top: 15px;
 }
-.bar .percent {
+.percent {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -246,7 +246,7 @@ body {
   margin-top: 27px;
   font-size: 10px;
 }
-/* -----------------------------------------sidebar--------------------------------------------- */
+/* -----------------------------------------hiddenbar--------------------------------------------- */
 .hiddenbar {
   position: absolute;
   border-radius: 10px 0px 0px 10px;
@@ -254,7 +254,7 @@ body {
   width: 30%;
   height: 100%;
   z-index: 1;
-  transform: translateX(-100%);
+  transform: translateX(-110%);
   transition: all 0.6s ease;
 }
 .cancel {
@@ -278,11 +278,12 @@ input[type="text"] {
   color: #ffffff;
   font-size: 16px;
   padding: 0px 0px 0px 40px;
-  width: 210px;
+  width: 55%;
   height: 47px;
   background-image: url("searchicon.svg");
   background-repeat: no-repeat;
   background-position: 8px 12px;
+  overflow: hidden;
 }
 input::placeholder {
   color: #616475;
@@ -300,5 +301,3 @@ input::placeholder {
   line-height: 48px;
   border: none;
 }
-
-/*-----------------------------keyframes---------------------------------*/

@@ -1,0 +1,55 @@
+@media screen and (max-width: 800px) {
+  .weather {
+    flex-direction: column;
+    margin: 2vw;
+  }
+  .sidebar {
+    border-radius: 10px;
+    width: 96vw;
+    height: 97vh;
+  }
+  .searchbar .search {
+    width: 40vw;
+  }
+  .weatherimage1 {
+    width: 20vh;
+    margin: 7vh;
+  }
+  .weatherimage2 {
+    width: 100vw;
+    left: 0;
+  }
+  .maincontainer {
+    width: 96vw;
+    margin-top: 2vw;
+    border-radius: 10px;
+  }
+  .units {
+    display: none;
+  }
+  .days {
+    flex-direction: column;
+    margin: 2vw;
+    border-radius: 10px;
+  }
+  .days > div {
+    margin: 5px;
+    border-radius: 10px;
+  }
+  .container2 {
+    margin: 50px 2vw 0px 2vw;
+  }
+  .grid {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 10px;
+  }
+  .grid > div {
+    border-radius: 10px;
+  }
+
+  .hiddenbar {
+    width: 96vw;
+    border-radius: 10px;
+  }
+}

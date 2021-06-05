@@ -149,7 +149,7 @@ const currentLocation = () => {
 
 //---------------------------------------Eventlisteners------------------------------------------
 cancelBtn.addEventListener("click", (e) => {
-  hiddenBar.style.transform = "translateX(-100%)";
+  hiddenBar.style.transform = "translateX(-110%)";
 });
 searchBtn.addEventListener("click", (e) => {
   hiddenBar.style.transform = "initial";
